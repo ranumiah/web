@@ -1,3 +1,8 @@
-<p>
-  gallery works!
-</p>
+<div>
+  <h2>gallery works!</h2>
+  <ul id="thumbnailsList">
+    <li *ngFor="let image of visibleImages">
+      <img src="{{image.url}}" width="200" height="160">
+    </li>
+  </ul>
+</div>
